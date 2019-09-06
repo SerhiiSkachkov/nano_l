@@ -1,0 +1,245 @@
+@import "../helpers/mixins"
+@import "../helpers/variables"
+
+
+.body-menu-open
+    overflow: hidden
+    
+.main-wrapper
+    padding: 0 0 0 0
+    width: 100%
+    position: relative
+    overflow: hidden
+    min-height: 100%
+    display: -webkit-box
+    display: -moz-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+
+
+
+.content 
+    text-align: left
+    width: 100%
+    -webkit-box-ordinal-group: 3
+    -ms-flex-order: 2
+    order: 2
+    -webkit-box-flex: 1
+    -ms-flex-positive: 1
+    flex-grow: 1
+    display: flex
+    -ms-flex-direction: column
+    flex-direction: column
+
+
+//text
+p
+    display: inline-block
+    margin-bottom: 5px
+//titles
+h1,.h1
+    font-size: 31px
+
+h2,.h2
+    font-size: 26px
+
+h3,.h3
+    font-size: 20px
+
+h4,.h4
+    font-size: 18px
+
+h5,.h5
+    font-size: 16px
+
+.text-center
+    text-align: center
+
+.text-left
+    text-align: left
+
+.text-right
+    text-align: right
+
+.text-justify
+    text-align: justify
+
+.text-th
+    font-weight: 300
+
+.text-rg
+    font-weight: 500
+
+.text-semi
+    font-weight: 600
+
+.text-extra
+    font-weight: 800
+
+.text-bold
+    font-weight: 700
+
+.text-black
+    font-weight: 900
+
+.text-gradient
+    background: linear-gradient(to right, #e0c595 0%,#a98c5a 100%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+.text-def
+    color:  #cdcdce
+    
+.text-lightgray
+    color: lightgray
+
+@media(min-width: 576px)
+    h1,.h1
+        font-size: 40px
+    h2,.h2
+        font-size: 34px
+    h3,.h3
+        font-size: 22px
+    .text-center-sm
+        text-align: center
+    .text-left-sm
+        text-align: left
+    .text-right-sm
+        text-align: right
+    .text-justify-sm
+        text-align: justify
+
+.title-block
+    position: relative
+    .title
+        position: relative
+        z-index: 1
+    .title-after
+        width: 100%
+        text-transform: uppercase
+        font-size: 27px
+        z-index: 0
+        position: absolute
+        top: -25px
+        left: 3px
+        color: rgba(80, 80, 80, 0.21176470588235294)
+
+@media(min-width: 768px)
+    .title-block
+        .title-after
+            font-size: 60px
+            top: -35px
+
+@media(min-width: 992px)
+    .title-block
+        .title-after
+            top: -40px
+            font-size: 60px
+
+@media(min-width: 1560px)
+    .title-block
+        .title-after
+            top: -40px
+            font-size: 78px
+
+@media(min-width: 768px)
+    h1,.h1
+        font-size: 50px
+    h2,.h2
+        font-size: 40px
+    h3,.h3
+        font-size: 26px
+    h4,.h4
+        font-size: 20px
+    .text-center-md
+        text-align: center
+    .text-left-md
+        text-align: left
+    .text-right-md
+        text-align: right
+    .text-justify-md
+        text-align: justify
+
+
+
+@media(min-width: 992px)
+    h1,.h1
+        font-size: 66px
+    h2,.h2
+        font-size: 46px
+    h3,.h3
+        font-size: 28px
+    h4,.h4
+        font-size: 18px
+    .text-center-lg
+        text-align: center
+    .text-left-lg
+        text-align: left
+    .text-right-lg
+        text-align: right
+    .text-justify-lg
+        text-align: justify
+
+.btn
+    font-size: 16px
+    color: white
+    padding: 18px 50px
+    display: inline-block
+    border: none
+    background-size: 200% auto
+    background-image: linear-gradient(to right, #f33c6d 0%,#ee6c9a 51%, #895cf2 100%)
+.btn:hover
+        background-position: right center
+
+
+.social
+    &-list
+        padding: 10px 0px
+        display: flex
+        li 
+            margin-right: 10px
+            a
+                padding: 0px 5px
+                color: gray
+                &:hover
+                    color: #895cf2
+                i
+                    font-size: 18px
+
+.page-loader 
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background-color: $dark-color
+    z-index: 99999
+
+ 
+.page-laoder-frame 
+    display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    height: 100vh
+
+ 
+.svg-loader 
+    width: 70px
+    animation: svg-loader 1s linear infinite
+
+ 
+@keyframes svg-loader 
+    from
+        filter: hue-rotate(0deg)
+        transform: rotate(0)
+    
+    to 
+        filter: hue-rotate(290deg)
+        transform: rotate(360deg)

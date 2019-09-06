@@ -1,0 +1,66 @@
+.foo
+    order: 3
+    &-wrapper
+        padding: 40px 0px
+        border-top: 1px solid  #292a2b
+    &-logo
+        margin-bottom: 30px
+        .logo
+            margin-bottom: 10px
+    &-social
+        margin-bottom: 30px
+        .title
+            margin-bottom: 10px
+    &-menu
+        margin-bottom: 30px
+        h5
+            margin-bottom: 20px
+        &-list
+            display: flex
+            flex-flow: wrap
+            li
+                width: 33%
+                margin-bottom: 10px
+            a
+                color:  #cdcdce
+                border-bottom: 1px solid  #cdcdce
+                &:hover
+                    color: #895cf2
+                    border-bottom: 1px solid  #895cf2
+    &-news
+        color: #cdcdce
+        .title
+            margin-bottom: 40px
+        &-el
+            display: flex
+            margin-bottom: 40px
+        &-txt
+            width: calc(100% - 115px)
+            p
+                font-size:  12px
+            a
+                color: #cdcdce
+                font-weight: bold
+                border-bottom: 1px solid #cdcdce
+                &:hover
+                    color: #895cf2
+                    border-bottom: 1px solid  #895cf2
+        &-img
+            width: 105px
+            height: 86px
+            margin-right: 10px
+.copy
+    display: block
+    color: white
+    font-size: 11px
+    color: gray
+
+@media(min-width: 576px)
+    .foo-menu-list li 
+        width: 20%
+
+@media(min-width: 992px)
+    .foo
+        &-menu-list
+            flex-direction: column
+        

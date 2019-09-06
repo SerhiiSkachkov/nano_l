@@ -1,0 +1,170 @@
+.header
+  z-index: 100
+  &-wrapper
+    position: relative
+  &-box
+    padding: 0px 15px
+    position: relative
+    display: flex
+    justify-content: space-between
+  &-left-side
+    padding: 20px 0px
+    display: flex
+    align-items: center
+    .logo
+      width: 60px
+      margin-right: 5px
+  &-right-side
+    padding: 30px 0px 30px 15px
+    display: flex
+    align-items: center
+    border-left: 1px solid #262325
+    justify-content: space-between
+  &-language
+    padding: 0px 10px
+    li
+      text-align: center
+      a
+        font-size: 16px
+        line-height: 22px
+        font-weight: 700
+        color: #4b4c4f
+      a.active
+        color: $primary-color
+  &-cash
+    color: $primary-color
+    font-size: 16px
+    p 
+      margin-bottom: 0px
+      margin-left: 4px
+      span
+        font-size: 12px
+    &:hover
+      opacity: 0.6
+  &-aside
+      display: none
+
+.nav--open
+  top: 110px!important
+.nav
+  overflow-y: auto
+  &-list
+    a:hover
+      color: #ba9b65
+.social-header
+  padding: 0px 15px
+@media(max-width: 991px)
+  .nav
+    width: 100%
+    height: calc(100vh - 110px)
+    position: fixed
+    top: -100%
+    left: 0px
+    right: 0px
+    background-color: #16171b
+    z-index: 90
+    transition: 1s
+    .nav-list
+      margin-bottom: 20px
+      li
+        padding: 0px  20px
+        border-bottom: 1px solid #262325
+        & > a
+          padding: 15px 0px
+          color: white
+          font-size: 16px
+        a.active
+          color: #ba9b65
+
+@media(min-width: 992px)
+  .header
+    &-box
+      padding: 0px
+      margin: 0 auto
+      position: static
+      justify-content: flex-start
+      .logo
+        margin-right: 0px
+    &-right-side
+      padding-left: 50px
+    &-left-side
+      padding-left: 10px
+      padding-right: 10px
+      position: absolute
+      left: 0px
+      .header-language
+        display: none
+    &-cash
+      i
+        font-size: 24px
+    &-aside
+      position: absolute
+      width: 80px
+      background-image: url(../img/body_bg.jpg)
+      display: flex
+      flex-direction: column
+      justify-content: center
+      .header-language
+        padding: 30px 0px
+      .social-list
+        padding: 30px 0px
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        li
+          margin: 10px 0px
+  .nav
+    padding-top: 40px
+    padding-bottom: 30px
+    margin-left: 80px
+    &-list
+      display: flex
+      li
+        margin-right: 10px
+      a
+        padding: 10px 10px
+        font-size: 16px
+        color: white
+      a.active
+        color: #ba9b65  
+    .social
+      display: none
+
+
+@media(min-width: 1200px)
+  .header
+    &-box
+      justify-content: flex-start
+      max-width: 1180px
+    &-right-side
+      padding-left: 60px
+    &-cash
+      p
+        font-size: 22px
+        span
+          font-size: 14px
+      i
+        font-size: 34px
+    .nav
+      padding-right: 50px
+      &-list
+        display: flex
+        a
+          padding: 10px 20px
+          font-size: 16px
+
+@media(min-width: 1560px)
+  .header
+    &-box
+      max-width: 1440px
+      position: static
+      padding-left: 15px
+      padding-right: 15px
+    .nav
+      margin-left: 0px
+      &-list
+        a
+          font-size: 18px
+
+
+      

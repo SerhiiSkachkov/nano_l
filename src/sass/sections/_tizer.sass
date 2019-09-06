@@ -1,0 +1,101 @@
+.tz-slider
+    height: auto!important
+.tz-slider-el
+    padding: 100px 0px 80px
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    &-ttl
+        margin-bottom: 18px
+    &-content
+        margin-bottom: 40px
+        p
+            line-height: 28px
+
+
+@media(min-width: 992px)
+    .tz-slider-el
+        padding: 150px 0px 200px
+        &-box
+            margin-left: 60px
+        &-content
+            margin-bottom: 62px
+
+@media(min-width: 1200px)
+    .tz-slider-el
+        padding: 150px 0px 350px
+
+.slick-dots
+    width: 100%
+    padding: 0px 15px
+    position: absolute
+    top: 50px
+    display: flex
+    transition: 0.5s
+    align-items: center
+    a
+        background-color: transparent
+        border: none
+        font-size: 20px
+        position: relative
+        color: #9ea0a0
+        font-size: 14px
+        font-weight: bold
+        &:hover
+            cursor: pointer
+            color: $primary-color
+    li
+        position: relative
+        transition: 0.5s
+        width: auto
+        margin-right: 5px
+        &:before
+                content: ''
+                display: block
+                width: 0px
+                transition: 0.5s
+                height: 1px
+                left: 30px
+                position: absolute
+                top: 50%
+                background-color: #9ea0a0
+    li.slick-active
+        transition: 0.5s
+        margin-right: 85px
+        a
+            font-size: 18px
+            color: #31303a
+        &:before
+            width: 60px
+            transition: 0.5s
+
+@media(min-width: 576px)
+    .slick-dots
+        max-width: 540px
+        margin: 0 auto
+        left: 0px
+        right: 0px
+
+@media(min-width: 768px)
+    .slick-dots
+        max-width: 728px
+
+@media(min-width: 992px)
+    .slick-dots
+        top: auto
+        bottom: 150px
+        max-width: 960px
+        padding-left: 75px
+
+@media(min-width: 1200px)
+    .slick-dots
+        max-width: 1170px
+        padding-left: 85px
+
+@media(min-width: 1560px)
+    .slick-dots
+        max-width: 1440px
+        padding-left: 30px
+    .tz-slider-el
+        &-box
+            margin-left: 15px

@@ -1,0 +1,101 @@
+.command
+	padding: 70px 0px
+	background: url('../img/command_bg.jpg') center top no-repeat/cover
+	.title-block
+		margin-bottom: 20px
+	&-el
+		margin-bottom: 20px
+		&-content
+			padding-top: 50px
+			h4
+				margin-bottom: 10px
+			p
+				color: #cdcdce
+		&-numb
+			position: absolute
+			font-size: 70px
+			font-family: 'Recoleta'
+			color: rgba(64, 64, 64, 0.24)
+	&-box
+		.title
+				margin: 20px 0px
+.command-form-wrap
+	text-align: center
+	border: 1px solid #5e5340
+	padding: 30px 15px
+	background: url('../img/bg-form-fl.png') center 40px no-repeat
+	.title
+		margin-bottom: 20px
+	.title-sub
+		margin-bottom: 10px
+	.btn
+		width: 100%
+
+.command-form-box
+	background: url('../img/bg-form.jpg') center center no-repeat/cover
+	padding: 5px 7px
+
+.form-group
+	margin-top: 10px
+	margin-bottom: 58px
+	text-align: center
+	
+.input-group
+	margin-bottom: 22px
+	position: relative
+	&-icon
+		position: absolute
+		left: 5px
+		bottom: 15px
+		i
+			font-size: 15px
+			padding: 3px 0px
+	&-validate
+		display: none
+		position: absolute
+		bottom: -15px
+		font-size: 12px
+
+.input-group > input
+	width: 100%
+	color: white
+	background-color: transparent
+	border: none
+	padding: 12px 10px 16px 25px
+	border-bottom: 1px solid #5e5340
+
+.input-group > input:focus
+			border-bottom: 1px solid #895cf2
+			& + .input-group-icon
+			  i
+          background-image: linear-gradient(to right,#895cf2 100%)					
+
+@media(max-width: 767px)
+	.command
+		&-el
+			height: auto!important
+
+@media(min-width: 768px)
+	.command
+		padding: 120px 0px
+		.title-block
+			margin-bottom: 90px
+	.command-form-wrap
+		padding: 50px 50px
+	.form-group
+		margin-top: 50px
+
+
+@media(min-width: 1200px)
+	.command
+		padding: 120px 0px 80px
+		&-box
+			.title
+				margin-bottom: 50px
+		&-el
+			margin-bottom: 20px
+			&-content
+				h4
+					margin-bottom: 20px
+		&-form-wrap 
+    	padding: 50px 50px

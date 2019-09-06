@@ -1,0 +1,38 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/all.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/v4-shims.min.css")
+        link(rel="stylesheet" href="./plugins/slick/slick.css")
+        link(rel='stylesheet'  media="(min-width: 992px)" href='./plugins/wow/animate.css')
+        link(rel='stylesheet' href='css/bootstrap-xxl.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title new
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    body
+        .page-loader
+            .page-laoder-frame
+                img.svg-loader(src="./img/logo.png")
+
+        .main-wrapper
+
+            include components/header.pug
+
+            main.content
+                include sections/tizer.pug
+                include sections/about.pug
+                include sections/mission.pug
+                include sections/happy.pug
+                include sections/cooperation.pug
+
+            include  components/footer.pug              
+        include components/script.pug
